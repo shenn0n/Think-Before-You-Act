@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0.1" translatesAutoresizingMaskIntoConstraints="NO" id="eos-az-ZET">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.1" translatesAutoresizingMaskIntoConstraints="NO" id="O0a-h1-FBM">
+                                <rect key="frame" x="16" y="195" width="361" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="t7a-sv-dLF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.1" translatesAutoresizingMaskIntoConstraints="NO" id="8qA-e3-kUU">
+                                <rect key="frame" x="126.66666666666669" y="573.33333333333337" width="140" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Uol-7l-fie"/>
+                                    <constraint firstAttribute="width" constant="140" id="xgH-b2-3Or"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8qA-e3-kUU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0jB-Zx-gsA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8qA-e3-kUU" secondAttribute="bottom" multiplier="1.18" id="RYw-TY-qPj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O0a-h1-FBM" secondAttribute="trailing" constant="16" id="T19-0H-eXe"/>
+                            <constraint firstItem="eos-az-ZET" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WYZ-u3-v4W"/>
+                            <constraint firstAttribute="bottom" secondItem="eos-az-ZET" secondAttribute="bottom" id="WiW-qv-Ha6"/>
+                            <constraint firstItem="O0a-h1-FBM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YJ9-wf-ig0"/>
+                            <constraint firstItem="O0a-h1-FBM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" priority="900" constant="195" id="YmP-DM-sRO"/>
+                            <constraint firstItem="eos-az-ZET" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dtG-GF-53l"/>
+                            <constraint firstItem="eos-az-ZET" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="kEO-ft-XrK"/>
+                            <constraint firstItem="eos-az-ZET" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nsO-8Z-gPy"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="O0a-h1-FBM" secondAttribute="bottom" constant="270" id="nuC-XX-Pii"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0.1" width="169" height="367"/>
+        <image name="1.1" width="154" height="117"/>
+        <image name="2.1" width="60" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
