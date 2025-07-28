@@ -20,7 +20,7 @@ class MainViewController: UIViewController, Storyboardable {
     }
     
     @IBAction func devilButtonPressed(_ sender: Any) {
-        mainViewModel?.devilButtonPressed(coordinator)
+        mainViewModel?.devilButtonPressed()
     }
     
     func bindViewModel() {
@@ -32,6 +32,13 @@ class MainViewController: UIViewController, Storyboardable {
         mainViewModel?.buttonImageName.bind { [weak self] buttonImageName in
             DispatchQueue.main.async {
                 self?.devilButton.setImage(UIImage(named: buttonImageName), for: .normal)
+            }
+        }
+        mainViewModel?.isQuizFinished.bind { [weak self] isQuizFinished in
+            DispatchQueue.main.async {
+                if isQuizFinished {
+                    self?.coordinator?.showDetail()
+                }
             }
         }
     }

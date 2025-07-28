@@ -10,13 +10,14 @@ import Foundation
 class MainViewModel {
     var messageText = Dynamic("")
     var buttonImageName = Dynamic("")
+    var isQuizFinished = Dynamic(false)
     
     private var messages = Message.getMessage()
     private var currentIndex = 0
     
-    func devilButtonPressed(_ coordinator: AppCoordinator?) {
+    func devilButtonPressed() {
         guard currentIndex < messages.count else {
-            coordinator?.showDetail()
+            isQuizFinished.value = true
             return
         }
         

@@ -15,10 +15,10 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        showLogin()
+        showMain()
     }
 
-    func showLogin() {
+    func showMain() {
         let vc = MainViewController.createObject()
         vc.coordinator = self
         vc.mainViewModel = MainViewModel()
